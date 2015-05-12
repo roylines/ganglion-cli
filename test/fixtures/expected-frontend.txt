@@ -1,0 +1,5 @@
+  acl url-microservice-1 path_beg /api/microservice-1
+  use_backend microservice-1 if url-microservice-1
+
+  acl url-microservice-2 path_beg /api/microservice-2
+  use_backend microservice-2 if url-microservice-2
